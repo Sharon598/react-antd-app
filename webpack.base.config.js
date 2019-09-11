@@ -40,13 +40,11 @@ module.exports = {
       ]
     },
     plugins: [
-        new HtmlWebpackPlugin(
-          {
+        new HtmlWebpackPlugin({
             template: __dirname + '/src/index.html',
             filename: 'index.html',
-            // inject: 'body'
-        }
-        ),
+            inject: 'body'
+        }),
         // new CopyWebpackPlugin([{
         //     from: __dirname + '/src',
         //     to: __dirname + '/dist/js'

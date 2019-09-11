@@ -19,4 +19,5 @@ const webpackConfigDev = {
       }
     }
 }
+
 module.exports = merge(webpackConfigBase, webpackConfigDev);
