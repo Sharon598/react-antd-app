@@ -57,7 +57,7 @@ class Register extends Component {
         return(
           <Form onSubmit={this.searchList} style={{ textAlign: 'center'}}>
             <Form.Item {...formItemLayout} label="用户名">
-          {getFieldDecorator('username', {
+          {getFieldDecorator('userName', {
             rules: [{ required: true, message: 'Please input your username!' }]
           })(
             <Input
