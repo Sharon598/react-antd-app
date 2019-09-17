@@ -11,6 +11,7 @@ const webpackConfigProd = {
         // // root: path.join(__dirname,"../")
         // // }
         // )
+        new BundleAnalyzerPlugin({ analyzerPort: 8081 }),
         new CleanWebpackPlugin('dist/*.*', {
           root: __dirname,
           verbose: true,

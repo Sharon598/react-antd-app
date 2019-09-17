@@ -1,14 +1,15 @@
 
 const path = require("path");
 const merge = require("webpack-merge");
+const bundleAnalyzerPlugin = require("webpack-bundle-analyzer");
 const webpackConfigBase = require("./webpack.base.config");
  
 const webpackConfigDev = {
     devtool: 'cheap-module-eval-source-map',
     mode:'development',
-    // plugins:[
-    //     new BundleAnalyzerPlugin()
-    // ],
+    plugins:[
+    //    bundleAnalyzerPlugin()
+    ],
     devServer:{
       contentBase: './dist',
       hot: true,
