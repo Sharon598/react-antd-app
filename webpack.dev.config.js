@@ -1,7 +1,7 @@
 
 const path = require("path");
 const merge = require("webpack-merge");
-const bundleAnalyzerPlugin = require("webpack-bundle-analyzer");
+
 const webpackConfigBase = require("./webpack.base.config");
  
 const webpackConfigDev = {

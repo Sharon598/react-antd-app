@@ -7,7 +7,7 @@ const getRouter = () => (
     <Router>
         <Switch>
             <Route exact path="/" component={Home}/>
-            <Route path="/test" component={Test}/>
+            {/* <Route path="/test" component={Test}/> */}
         </Switch>
     </Router>
 );
